@@ -7,6 +7,122 @@
   pointer-events: none;
 }
 
+.card {
+  width: 20vw;
+  height: 80vh;
+  border-radius: 10px;
+  box-shadow: 10px 7px 7px #d6ccc2;
+  margin-inline: 3vh;
+  margin-block: 5vh;
+  padding: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #f5ebe0;
+  text-align: start;
+}
+
+.HomeCard {
+  margin: 2vh;
+  width: 30vw;
+  height: 70vh;
+  background-color: #f5ebe0;
+  box-shadow: 10px 7px 7px #d6ccc270;
+}
+
+.img {
+  border-radius: 50%;
+  width: 25vh;
+}
+
+.icon {
+  margin-inline: 1vw;
+}
+.center {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.button2 {
+  width: 10vw;
+  height: 6vh;
+  background-color: #ecddce;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #d6ccc2;
+}
+
+.button2:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  background-color: #cb997e;
+  color: #ffffff;
+}
+
+.button2:active {
+  transform: scale(0.9);
+  transition: 0.1s;
+  background-color: #62b074;
+  color: white;
+}
+
+.button {
+  width: 13vw;
+  height: 7vh;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #cb997ea8;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in;
+  background-color: #cb997e;
+  color: white;
+  box-shadow: 3px 3px 3px #ae836c;
+}
+
+.button:active {
+  transform: scale(0.9);
+  transition: 0.2s;
+  background-color: #62b074;
+  color: white;
+  border-color: #80b1b4;
+}
+
+.font_mobile {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-block-end: 3px;
+}
+
+.contener_button {
+  margin-block-start: 8vh;
+}
+
+.contener_body {
+  display: flex;
+  justify-content: center;
+}
+
+.map {
+  width: 70vw;
+  height: 75vh;
+  padding-top: 2vh;
+  margin-inline-end: 1vw;
+}
+
+.contener_map {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -24,6 +140,20 @@
   color: white;
 }
 
+.User_Card {
+  width: 90vw;
+  height: 90vh;
+  padding: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+
+  background-color: #f5ebe0;
+  text-align: start;
+  margin: 1%;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -34,5 +164,57 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1000px) {
+  .body {
+    display: flex;
+    flex-direction: column;
+  }
+  .HomeCard {
+    width: 90%;
+    height: 45%;
+    margin-inline: 2%;
+  }
+
+  .button {
+    width: 60%;
+    height: 5vh;
+    margin-bottom: 4vh;
+  }
+
+  .img {
+    width: 20vw;
+  }
+
+  .font_mobile {
+    font-size: 0.7rem;
+  }
+
+  .contener_button {
+    margin-block-start: 4vh;
+  }
+
+  .User_Card {
+    width: 90%;
+    height: 40%;
+    padding: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5ebe0;
+    text-align: start;
+  }
+
+  .contener_body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .map {
+    width: 95vw;
+    height: 55vh;
+    margin-block: 3%;
   }
 }
